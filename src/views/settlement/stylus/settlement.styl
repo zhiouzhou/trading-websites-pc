@@ -1,0 +1,1108 @@
+div,span, i
+  font-sze 12px
+.container{
+  c(#666)
+  min-height 600px
+}
+
+.mt-32{
+  mb(32)
+}
+.sc-title{
+  ft(14)
+  c(#333)
+  font-weight 600
+  mb(18)
+}
+.delivery-wrap{
+  .d-w-box{
+    position relative
+    flex()
+    align-items flex-start
+    .add-new-ads{
+      position absolute
+      right 0
+      top 0
+      ft(12)
+      c(#4A90E2)
+      cp()
+    }
+  }
+  .d-w-btn{
+    w(250)
+    mt(70)
+    cp()
+    pl(30)
+    &:hover{
+      c(#4A90E2)
+    }
+  }
+  .all-show-address{
+    flex-1()
+    li{
+      display inline-block !important
+    }
+  }
+  .d-w-list{
+    flex()
+    flex-wrap wrap
+    mb(32)
+    li{
+      display none
+    }
+    li:first-child{
+      inline()
+    }
+    .address-box{
+      cursor: pointer;
+      width: 31%;
+      h(120)
+      margin: 5px 1%;
+      padding: 10px 0;
+      border: 1px solid #ddd;
+      background: #fff url(../../assets/images/addressBorder_no.png) no-repeat center center;
+      background-size: 100% 100%;
+      background-origin: padding-box;
+      position: relative;
+      min-width 280px
+    }
+    .address-selected{
+      background: #fff url(../../assets/images/addressBorder_has.png) no-repeat center center;
+      background-size: 100% 100%;
+      position relative
+      &:before{
+        content ""
+        position absolute
+        right 0
+        bottom 0
+        w(20)
+        h(20)
+        background-image url(../../assets/images/selected-icon.png)
+        background-size contain
+        background-repeat no-repeat
+        background-position center
+      }
+    }
+    .consignee{
+      padding 10px 0 16px
+      border-bottom 1px solid #E5E5E5
+      ft(14)
+      margin 0 12px
+      span{
+        c(#333)
+        font-weight 600
+      }
+      .contact{
+        ml(12)
+      }
+    }
+    .ads{
+      ft(16)
+      c(#666)
+      mt(16)
+      padding 0 12px
+      p{
+        mb(12)
+      }
+      mb(12)
+    }
+    .default-tag{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bg(#ccc);
+      color: #fff;
+      padding: 3px 5px;
+      opacity: 0.7;
+    }
+    .default-btn{
+      position absolute
+      right 15px
+      bottom 15px
+      border 1px solid #E5E5E5
+      border-radius 2px
+      padding 4px;
+    }
+  }
+}
+.distribution-wrap{
+  mb(32)
+  .d-w-type{
+    flex()
+    align-items center
+    ft(12)
+    c(#666)
+    >span{
+      w(98)
+      h(30)
+      lh(30)
+      text-c()
+      border 1px solid #E5E5E5
+      box-sizing border-box
+      position relative
+      mr(12)
+      inline()
+      cp()
+      ft(12)
+    }
+    .active{
+      border 1px solid #E53935
+      c(#E53935)
+      &:before{
+        content ""
+        position absolute
+        right 0
+        bottom 0
+        w(12)
+        h(12)
+        background-image url(../../assets/images/selected-icon.png)
+        background-size contain
+        background-repeat no-repeat
+        background-position center
+      }
+    }
+    >i{
+      ft(12)
+      c(#E53935)
+    }
+  }
+  .d-w-content{
+    .c-column{
+      flex()
+      align-items center
+      mt(16)
+      ft(12)
+      span{
+        c(#666)
+        mr(12)
+        ft(12)
+      }
+      p{
+        c(#333)
+        ft(12)
+        font-weight 600
+      }
+      .c-column-btn{
+        c(#4cb3eb)
+        ml(20)
+        cp()
+      }
+    }
+  }
+}
+.payment-wrap{
+  mb(32)
+  .p-w-type{
+    flex()
+    align-items center
+    ft(12)
+    c(#666)
+    >span{
+      w(98)
+      h(30)
+      lh(30)
+      text-c()
+      border 1px solid #E5E5E5
+      box-sizing border-box
+      position relative
+      mr(12)
+      inline()
+      cp()
+      ft(12)
+    }
+    .active{
+      border 1px solid #E53935
+      c(#E53935)
+      &:before{
+        content ""
+        position absolute
+        right 0
+        bottom 0
+        w(12)
+        h(12)
+        background-image url(../../assets/images/selected-icon.png)
+        background-size contain
+        background-repeat no-repeat
+        background-position center
+      }
+    }
+  }
+}
+.goods-wrap{
+  mb(32)
+  .g-w-box{
+    border 1px solid #EDEDED
+    .box-title-column{
+      bg(#EDEDED)
+      flex()
+      align-items center
+      h(40)
+      ft(12)
+      c(#333)
+      span{
+        width 30%
+        text-c()
+      }
+      span:first-child{
+        width 40%
+      }
+    }
+  }
+  .group-wrap{
+    .group-wrap-list{
+      .g-w-l-name{
+        h(48)
+        lh(48)
+        bg(#FAFAFB)
+        ft(12)
+        c(#333)
+        pl(20)
+      }
+    }
+  }
+}
+.preferential-wrap{
+  mb(32)
+  .paper{
+    mb(16)
+    .paper-t{
+      flex()
+      align-items center
+      ft(12)
+      >i{
+        inline()
+        w(16)
+        h(16)
+        background: url(../../assets/images/toggler-arrow.jpg) no-repeat 0 0;
+        margin 0 8px 0 18px
+        cp()
+        position relative
+        &:before{
+          content ""
+          position absolute
+          width 500%
+          height 100%
+          z-index 2
+        }
+      }
+      .p-t-title{
+        c(#005EA7)
+        mr(24)
+        cp()
+      }
+      .p-t-total{
+        flex-1()
+        c(#666)
+        text-align right
+      }
+    }
+    .paper-b{
+      mt(16)
+      border 1px solid #EDEDED
+      padding 20px 0 24px
+      .p-b-list{
+        max-height 180px
+        overflow-y scroll
+        >li{
+          flex()
+          align-items center
+          ft(12)
+          c(#666)
+          mb(20)
+          .checker{
+            inline()
+            w(16)
+            h(16)
+            cp()
+            margin 0 16px
+            background-image url(../../assets/images/weigouxuanyouhuo_ic@3x.png)
+            background-size contain
+            background-repeat no-repeat
+            background-position center
+          }
+          .checked{
+            background-image url(../../assets/images/yigouxuan.png)
+          }
+          .amount{
+            mr(25)
+          }
+        }
+      }
+      .p-b-bottom{
+        flex()
+        flex-center()
+        span{
+          w(98)
+          h(30)
+          lh(30)
+          box-sizing border-box
+          ft(12)
+          inline()
+          text-c()
+          cp()
+        }
+        .confirm{
+          bg(#E53539)
+          c(#fff)
+          mr(26)
+        }
+        .cancel{
+          c(#333)
+          border 1px solid #DFDFDF
+        }
+      }
+    }
+  }
+  .coupon{
+    mb(16)
+    .coupon-t{
+      flex()
+      align-items center
+      ft(12)
+      >i{
+        inline()
+        w(16)
+        h(16)
+        background: url(../../assets/images/toggler-arrow.jpg) no-repeat 0 0;
+        margin 0 8px 0 18px
+        cp()
+        position relative
+        &:before{
+          content ""
+          position absolute
+          width 500%
+          height 100%
+          z-index 2
+        }
+      }
+      .c-t-title{
+        c(#005EA7)
+        mr(24)
+        cp()
+      }
+      .c-t-total{
+          flex-1()
+      flex()
+      align-items center
+      ft(12)
+      c(#666)
+      cp()
+      justify-content flex-end
+      i{
+        inline()
+        w(16)
+        h(16)
+        background-image url(../../assets/images/coupon_code_shuoming.png)
+        background-size contain
+        background-repeat no-repeat
+        background-position center
+        mr(5)
+      }
+      }
+    }
+    .coupon-b{
+      border 1px solid #EDEDED
+      mt(16)
+      .c-b-summary{
+        ft(12)
+        c(#666)
+        flex()
+        align-items center
+        padding 16px
+        .rules{
+          flex-1()
+          text-align right
+          cp()
+          i{
+            inline()
+            w(16)
+            h(16)
+            background-image url(../../assets/images/coupon_code_shuoming.png)
+            background-size contain
+            background-repeat no-repeat
+            background-position center
+            transform translateY(4px)
+            mr(5)
+          }
+        }
+      }
+      .c-b-coupons{
+        .coupons-column{
+          h(40)
+          flex()
+          align-items center
+          bg(#EDEDED)
+          span{
+            inline()
+            w(200)
+            text-c()
+            ft(12)
+            c(#666)
+            h(40)
+            lh(40)
+            cp()
+            box-sizing border-box
+          }
+          .active{
+            c(#E53935)
+            bg(#fff)
+            border-top 2px solid #E53539
+          }
+        }
+      }
+      .coupons-list{
+        flex()
+        flex-wrap wrap
+        padding 0 16px
+        margin 24px 0 8px 0
+        max-height 290px
+        overflow-y scroll
+        .coupons-list-box{
+          float left	
+          width 24%
+          margin-right 1%
+          mb(16)
+          .item-coupon{
+            border 1px solid #EDEDED
+            position relative
+            .i-c-t{
+              flex()
+              flex-direction column
+              padding 0 16px
+              h(90)
+              .coupon-amount{
+                flex()
+                align-items flex-end
+                c(#E53935)
+                mt(16)
+                >h4{
+                  ft(32)
+                }
+                >h5{
+                  ft(20)
+                }
+                >span{
+                  ft(12)
+                  ml(12)
+                }
+              }
+              .zp-view{
+                ft(12)
+                c(#666)
+                margin 6px 0
+                cp()
+                position relative
+                &:hover{
+                  &:before{
+                    content ""
+                    position absolute
+                    left 0
+                    bottom -20px
+                    background transparent
+                    width 100%
+                    height 50px
+                    z-index 1
+                  }
+                  .coupon-gifts-box{
+                    block()
+                  }
+                }
+                .coupon-gifts-box{
+                  z-index 9
+                  hide()
+                  position absolute
+                  width 116%
+                  left -16px
+                  mt(8)
+                  bg(#fff)
+                  box-shadow:0px 4px 6px 0px rgba(0,0,0,0.15),0px 1px 4px 0px rgba(0,0,0,0.15)
+                  .gifts-list{
+                    width 100%
+                    li{
+                      flex()
+                      padding 12px
+                      overflow hidden
+                      position relative
+                      img{
+                        border 1px solid #EDEDED
+                        w(60)
+                        h(60)
+                        box-sizing border-box
+                        mr(12)
+                      }
+                      .g-l-info{
+                        flex-1()
+                        flex()
+                        flex-direction column
+                        pr(12)
+                        p{
+                          flex()
+                          align-items flex-start
+                          i{
+                            c(#E53935)
+                            border 1px solid #E53935
+                            border-radius 2px
+                            mr(3)
+                            min-width 26px
+                            padding 1px 0px
+                            text-c()
+                          }
+                          span{
+                            ft(12)
+                            c(#666)
+                            text-overflow: ellipsis; display: -webkit-box;  -webkit-box-orient: vertical; overflow : hidden;-webkit-line-clamp: 2;
+                          }
+                        }
+                        .g-l-info-spec{
+                          flex()
+                          justify-content space-between
+                          span{
+                            ft(12)
+                            c(#666)
+                          }
+                          span:last-child{
+                            c(#333)
+                          }
+                        }
+                      }
+                      &:before{
+                        content ""
+                        position absolute
+                        width 100%
+                        h(1)
+                        bg(#EDEDED)
+                        left 84px
+                        bottom 0
+                      }
+                      &:last-child:before{
+                        content ""
+                        background transparent
+                      }
+                    }
+                  }
+                  &:before {
+                    content ""
+                    position absolute
+                    width: 16px;
+                    height: 16px;
+                    box-shadow: -4px -4px 4px -3px rgba(0, 0, 0, 0.1), 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+                    background: #fff;
+                    transform: translateX(30px) translateY(-4px) rotate(45deg);
+                  }
+                }
+              }
+              .limit-date{
+                ft(12)
+                c(#999)
+                mb(14)
+              }
+            }
+            .i-c-b{
+              ft(12)
+              c(#333)
+              h(36)
+              lh(36)
+              padding 0 16px
+              border-top 1px solid #EDEDED
+              text-overflow: ellipsis; display: -webkit-box;  -webkit-box-orient: vertical; overflow : hidden;-webkit-line-clamp: 1;
+            }
+            .checker{
+              position absolute
+              right 8px
+              top 8px
+              inline()
+              w(16)
+              h(16)
+              cp()
+              background-image url(../../assets/images/weigouxuanyouhuo_ic@3x.png)
+              background-size contain
+              background-repeat no-repeat
+              background-position center
+            }
+            .checked{
+              background-image url(../../assets/images/yigouxuan.png)
+            }
+          }
+        }
+      }
+      .c-b-bottom{
+        flex()
+        flex-center()
+        mb(24)
+        span{
+          w(98)
+          h(30)
+          lh(30)
+          box-sizing border-box
+          ft(12)
+          inline()
+          text-c()
+          cp()
+        }
+        .confirm{
+          bg(#E53539)
+          c(#fff)
+          mr(26)
+        }
+        .cancel{
+          c(#333)
+          border 1px solid #DFDFDF
+        }
+      }
+    }
+  }
+  .shrink{
+    transform rotate(180deg)
+    &:before{
+      right 0
+    }
+  }
+}
+
+
+.promotion-wrap{
+  mb(32)
+  .p-w-box{
+    border 1px solid #EDEDED
+    padding 0 16px
+    .promotion-list{
+      ft(12)
+      c(#666)
+      li{
+        flex()
+        align-items center
+        mb(16)
+        >span{
+          inline()
+          c(#E53935)
+          border 1px solid #E53935
+          w(58)
+          text-c()
+          h(20)
+          lh(20)
+          box-sizing border-box
+          border-radius 2px
+          mr(32)
+        }
+        &:first-child{
+          mt(16)
+        }
+      }
+    }
+  }
+}
+.remark-wrap{
+  mb(32)
+  .r-w-box{
+    border 1px solid #EDEDED
+    box-sizing: border-box;
+    overflow: hidden;
+    textarea{
+      width 100%
+      border none
+      ft(12)
+      c(#333)
+      padding 16px
+    }
+  }
+}
+.settlement-wrap{
+  ft(12)
+  c(#666)
+  .subfield-column{
+    li{
+      //flex()
+      padding 8px 0
+      //justify-content flex-end
+      float right
+      width 100%
+      text-align right
+      .amount{
+        w(150)
+        text-align right
+        c(#333)
+      }
+    }
+  }
+  .summary-column{
+    bg(#FAFAFB)
+    h(60)
+    lh(60)
+    //flex()
+    //justify-content flex-end
+    //align-items center
+    text-align right
+    .s-c-item{
+      //flex()
+      //align-items center
+      inline()
+      ml(30)
+    }
+    .total-reduce{
+      ft(14)
+      c(#E53539)
+      font-weight 600
+    }
+    .total-amount{
+      ft(18)
+      c(#E53539)
+      w(150)
+      font-weight 600
+      mr(50)
+    }
+  }
+  .confirm-order{
+    //flex()
+    //justify-content flex-end
+    margin 32px 0 100px
+    span{
+      float right	
+      inline()
+      w(160)
+      h(36)
+      lh(36)
+      text-c()
+      bg(#E53539)
+      ft(18)
+      c(#fff)
+      font-weight 600
+      cp()
+    }
+  }
+}
+
+.coupon-code{
+  mb(16)
+  .coupon-code-t{
+    flex()
+    align-items center
+    ft(12)
+    >i{
+      inline()
+      w(16)
+      h(16)
+      background: url(../../assets/images/toggler-arrow.jpg) no-repeat 0 0;
+      margin 0 8px 0 18px
+      cp()
+      position relative
+      &:before{
+        content ""
+        position absolute
+        width 500%
+        height 100%
+        z-index 2
+      }
+    }
+    .c-t-title{
+      c(#005EA7)
+      mr(24)
+      cp()
+    }
+    .rules{
+      flex-1()
+      flex()
+      align-items center
+      ft(12)
+      c(#666)
+      cp()
+      justify-content flex-end
+      i{
+        inline()
+        w(16)
+        h(16)
+        background-image url(../../assets/images/coupon_code_shuoming.png)
+        background-size contain
+        background-repeat no-repeat
+        background-position center
+        mr(5)
+      }
+    }
+  }
+  .coupon-code-b{
+    border 1px solid #EDEDED
+    padding 16px
+    mt(14)
+  }
+}
+.coupon-code-frame{
+  display:flex; display:-moz-box; display:-webkit-box;
+  -moz-box-align:center;-webkit-box-align:center;-o-box-align:center;box-align:center;
+  line-height:30px;
+}
+.ccf-input{
+  height:30px;
+  width:280px;
+  padding:0 10px;
+  border 1px solid #BDBDBD;
+  box-sizing border-box
+  &:focus{
+    border-color: #4A90E2;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(74,144,226, .3);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(74,144,226, .3);
+  }
+}
+.ccf-use-btn{
+  width:90px;
+  text-align:center;
+  line-height:30px;
+  color:#fff;
+  background:#e6e6e6;
+  margin:0 20px;
+  cp()
+}
+.ccf-use-btn-active{
+  background:#e43834;
+}
+.coupon-code-desc{
+  line-height: 30px;
+  display: inline-block;
+  min-width: 280px;
+  padding: 0 10px;
+  margin-top: 10px;
+  box-sizing border-box
+}
+.coupon-code-desc.ccd-faild{
+  background:#fef2f2;
+  border:1px solid #fbd0cb;
+  color:#e53438;
+  position:relative;
+  padding-left:25px;
+}
+.coupon-code-desc.ccd-faild .faild-close{
+  content:"";
+  position:absolute;
+  top: 8px;
+  left: 5px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../../assets/images/faild_close_icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cp()
+}
+.coupon-code-desc.ccd-success{
+  background:#f3f3f3;
+  border:1px solid #e5e5e5;
+  color:#333;
+  span{
+    c(#e53438)
+  }
+}
+.coupon-code-notice{
+  position:relative;
+  margin-left:15px;
+}
+.coupon-code-notice:before{
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -20px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../../assets/images/coupon_code_notice.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.order-coupon-code-reset{
+  margin:0 20px 0 10px;
+  border: 1px solid #999999;
+  border-radius: 2px;
+  color: #666;
+  font-size: 12px;
+  height:30px;
+  line-height:30px;
+  width:90px;
+  text-align:center;
+  box-sizing: border-box;
+  cp()
+}
+
+//购买限制弹窗
+.limit-pay-box{
+  .lpb-tips{
+    bg(#FFFAF3)
+    flex()
+    align-items center
+    padding 16px 12px
+    i{
+      inline()
+      w(16)
+      h(16)
+      mr(6)
+      background-image: url(../../assets/images/wenxintishi.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    p{
+      ft(12)
+      c(#FF703B)
+      line-height 1.3
+    }
+  }
+  .lpb-content{
+    padding 0 24px
+    .group-list{
+      li{
+        mt(24)
+        h5{
+          ft(14)
+          c(#333)
+          font-weight 600
+          mb(4)
+        }
+        p{
+          ft(12)
+          c(#999)
+        }
+      }
+    }
+    .limit-box{
+      h5{
+        mt(24)
+        mb(24)
+      }
+      .product-list{
+        flex()
+        flex-wrap wrap
+        li{
+          w(80)
+          h(80)
+          border 1px solid #EDEDED
+          box-sizing border-box
+          bg(#fff)
+          position relative
+          img{
+            margin auto
+          }
+          .no-can-buy-tag{
+            position absolute
+            left 0
+            bottom 0
+            h(20)
+            lh(20)
+            text-c()
+            bg(#000)
+            c(#fff)
+            ft(12)
+            opacity 0.5
+            width 100%
+          }
+        }
+      }
+    }
+  }
+  .lpb-bottom{
+    flex()
+    flex-center()
+    pt(16)
+    span{
+      inline()
+      w(120)
+      text-c()
+      h(36)
+      lh(36)
+      ft(14)
+      border-radius 2px
+      box-sizing border-box
+      cp()
+    }
+    .confirm{
+      bg(#E53935)
+      c(#fff)
+    }
+    .cancel{
+      bg(#EDEDED)
+      c(#333)
+      mr(20)
+      border 1px solid #E5E5E5
+    }
+  }
+}
+.self-pick-ads-list{
+  flex()
+  align-items center
+  mb(10)
+  p{
+    ml(12)
+  }
+}
+.checker{
+  inline()
+  w(16)
+  h(16)
+  cp()
+  background-image url(../../assets/images/weigouxuanyouhuo_ic@3x.png)
+  background-size contain
+  background-repeat no-repeat
+  background-position center
+}
+.checked{
+  background-image url(../../assets/images/yigouxuan.png)
+}
+.not-choose{
+  background-image url(../../assets/images/bukegouxuan_youhuiquan.png) !important
+}
+//不可用券样式
+.canot-use-coupons{
+  .coupon-amount{
+    color #666 !important
+  }
+  .i-c-b{
+    color #999 !important
+  }
+  .canot-use-reason{
+    mt(4)
+    flex()
+    align-items center
+    i{
+      w(14)
+      h(14)
+      inline()
+      background-image: url(../../assets/images/canotUse.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    span{
+      ft(12)
+      c(#666)
+      ml(4)
+    }
+  }
+}
+.red{
+ c(#E53539)
+ }
+.el-dialog__wrapper /deep/ .el-dialog{
+  max-width 800px
+  .el-dialog__header{
+    border-bottom 1px solid #e5e5e5;
+  }
+}
+.dialog-content-wrap{
+  ft(18)
+  c(#666)
+  font-weight 600
+  line-height 1.5
+}
+.sc-t-shopcart{
+  float right
+  c(#4A90E2)
+}
+.subfield-column,.confirm-order,.coupons-list{
+ zoom:1;	
+}
+.subfield-column:after,.confirm-order:after,.coupons-list:after{
+  clear: both;
+  display: block;
+  content: "";
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+}
+
+
+

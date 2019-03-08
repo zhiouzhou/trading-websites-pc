@@ -1,0 +1,42 @@
+div,span, i
+  font-sze 12px
+  color #333
+.product-item{
+  padding 12px
+  border-bottom 1px solid #EDEDED
+  flex()
+  .item-l{
+    width 40%
+    flex()
+    img{
+      w(80)
+      h(80)
+      bg(#fff)
+      margin 0 12px 0 0
+    }
+    .item-info{
+      position relative
+      flex()
+      flex-direction column
+      .spec{
+        mt(12)
+      }
+    }
+  }
+  .item-c{
+    width 30%
+    text-c()
+    .reduce{
+      c(#E53935)
+      mt(12)
+    }
+  }
+  .item-r{
+    width 30%
+    text-c()
+    c(#333)
+  }
+  &:last-child{
+    border-bottom none
+  }
+}

@@ -1,0 +1,271 @@
+.dealer-coupon-flex{
+  display:flex !important; display:-moz-box !important; display:-webkit-box !important;
+}
+.dealer-coupon-flex-item{
+  box-flex:1; -webkit-box-flex:1; -moz-box-flex:1;display:block;
+}
+.dealer-box-content{
+  width:100%;
+}
+.dbc-list{
+  width:100%;
+  font-size: 14px;
+  color:#fff;
+  margin-top:30px;
+  min-height:400px;
+  min-width:940px;
+}
+.dbc-list li{
+  width:50%;
+  border-left: none !important;
+  display:flex; display:-moz-box; display:-webkit-box;
+  -moz-box-align:center;-webkit-box-align:center;-o-box-align:center;box-align:center;
+  margin-bottom: 20px;
+  float:left;
+  box-sizing: border-box;
+}
+.dbc-left{
+  width: 130px;
+  height: 168px;
+  background-image: url(../../assets/images/youhuiquanzuo_lanse.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  text-align: center;
+}
+.dbc-left h5{
+  margin:45px 0 12px 0;
+  font-size 28px
+}
+.dbc-left p{
+
+}
+.dbc-left h5 span{
+  font-size: 48px;
+}
+.dbc-middle{
+  height: 168px;
+  box-flex:1; -webkit-box-flex:1; -moz-box-flex:1;display:block;
+  padding-left: 10px;
+  border-top: 1px solid #e8eaed;
+  border-bottom: 1px solid #e8eaed;
+  background:#fff;
+}
+.dbc-middle h5{
+  margin-top:25px;
+  margin-bottom:85px;
+  color:#333;
+  font-size 16px
+}
+.dbc-middle p{
+  color:#999;
+  font-size 14px
+}
+@media (max-width:1200px) {
+  .dbc-middle p{
+    font-size:13px;
+  }
+}
+.dbc-right{
+  width:125px;
+  height: 168px;
+  text-align: center;
+  position:relative;
+  background-image: url(../../assets/images/dealer_youhuiquanyou.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.dbc-right .dbc-btn{
+  width:90px;
+  color:#fff;
+  text-align: center;
+  border-radius:28px;
+  margin-top: 110px;
+  margin-left: 20px;
+  line-height: 28px;
+  cursor:pointer;
+}
+.dbc-right .only{
+  font-size: 12px;
+  color:#ef5350;
+  position:absolute;
+  width:100%;
+  top:90px;
+  text-align: center;
+}
+.lingquan-btn-finish{
+  background:#bdbdbd;
+}
+.lingquan-btn{
+  background:#5E91E2;
+}
+.dbc-canvas{
+  position:absolute;
+  width:80px;
+  height:60px;
+  top:20px;
+  right:18px;
+}
+.dbc-gone{
+  position:absolute;
+  top:20px;
+  right:30px;
+  width: 60px;
+  height: 60px;
+  background-image: url(../../assets/images/icon_yiqiangguang.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  text-align: center;
+}
+.dbc-received{
+  position:absolute;
+  top:20px;
+  right:30px;
+  width: 60px;
+  height: 60px;
+  background-image: url(../../assets/images/yilingqu_youhuanquan@2x.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  text-align: center;
+}
+.pad-l10{
+  padding-left:10px;
+}
+.pad-r10{
+  padding-right:10px;
+}
+.dealer-coupons-wrapper .no-coupon{
+  display:flex; display:-moz-box; display:-webkit-box;
+  -moz-box-align:center;-webkit-box-align:center;-o-box-align:center;box-align:center;
+  width:100%;
+  padding:140px 0;
+}
+.dealer-coupons-wrapper .no-coupon .icon{
+  margin-left:30%;
+  margin-right:25px;
+  width: 120px;
+  height: 120px;
+  background-image: url(../../assets/images/noCoup.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  text-align: center;
+}
+.dealer-coupons-wrapper .no-coupon p{
+  box-flex:1; -webkit-box-flex:1; -moz-box-flex:1;display:block;
+  font-size: 14px;
+
+}
+.dealer-coupons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.coupon-item-wrapper {
+  height: 128px;
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+}
+.coupon-item-left {
+  width: 94px;
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dc2534;
+  color: #fff;
+}
+.coupon-item-left.yet {
+  background-color: #bdbdbd;
+}
+.coupon-item-left ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 10px;
+  height: 108px;
+  left: -5px;
+  top: 10px;
+}
+.coupon-item-left ul li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.coupon-item-center {
+  width: 251px;
+  height: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #e8eaed;
+  border-bottom: 1px solid #e8eaed;
+  border-right: 2px dashed #e8eaed;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px 12px;
+  position: relative;
+}
+.coupon-item-center .yinjiaoTop,.coupon-item-center .yinjiaoBottom {
+  width: 8px;
+  height: 8px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+}
+.coupon-item-center .yinjiaoTop {
+  top: -4px;
+  right: -4px;
+  border-bottom: 1px solid #e8eaed;
+}
+.coupon-item-center .yinjiaoBottom {
+  bottom: -4px;
+  right: -4px;
+  border-top: 1px solid #e8eaed;
+}
+.coupon-item-right {
+  width: 128px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #e8eaed;
+}
+.coupon-item-right .progress-item {
+  width: 60px;
+  height: 52px;
+  padding: 16px 18px 0;
+  text-align: center;
+  color: #d91f2f;
+}
+.coupon-item-right .descript-item {
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+}
+.coupon-item-right .coupon-btn {
+  display: block;
+  width: 100px;
+  height: 30px;
+  background-color: #ef5350;
+  line-height: 30px;
+  font-size: 14px;
+  border-radius: 30px;
+  color: #fff;
+}
+
+/*经销商优惠券样式*/
+
+.coupon-item-right .coupon-btn.yet{
+  background-color: #bdbdbd;
+}

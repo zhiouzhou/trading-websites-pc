@@ -1,0 +1,161 @@
+div,h5,p,span, i
+  font-sze 12px
+
+.tip-column{
+  bg(#FFFAF3)
+  border 1px solid #F1DCB9
+  c(#333)
+  flex()
+  align-items center
+  padding 12px
+  mb(12)
+  span{
+    c(#E53935)
+    border 1px solid #E53935
+    padding 1px 2px
+    border-radius 2px
+    mr(8)
+  }
+  p{
+    line-height 1.3
+  }
+}
+.product-item{
+  flex()
+  align-items center
+  padding 12px
+  border 1px solid #DFDFDF
+  .pi-l{
+    flex-1()
+  }
+  .pi-r{
+    flex()
+    align-items center
+    .dw{
+      ml(10)
+    }
+  }
+}
+.info{
+  flex()
+  .pic{
+    w(80)
+    h(80)
+    border 1px solid #DDDDDD
+    mr(12)
+  }
+  .detail{
+    flex()
+    flex-direction column
+    position relative
+    h5{
+      c(#212121)
+    }
+    .price{
+      c(#E53935)
+      margin 10px 0
+    }
+    .reduce{
+      mb(10)
+      span{
+        border 1px solid #E53935
+        c(#E53935)
+        padding 0 2px
+        border-radius 2px
+      }
+    }
+    .spec{
+      color #999 !important
+      span{
+        mr(16)
+      }
+    }
+  }
+}
+.tag{
+  ml(80)
+  mt(26)
+  position relative
+}
+
+.number-input {
+  font-size: 10px;
+  color: #333333;
+  width: 94px;
+  height: 28px;
+  border-radius: 1px;
+  border: 1px solid rgba(189, 189, 189, 1);
+  box-sizing: border-box;
+  display: flex;
+  background: #fff;
+
+  .reduce {
+    width: 27px;
+    border-right: 1px solid #bdbdbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-image: url('../../assets/images/jian_kedian@2x.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .disabled {
+      opacity: 0.4;
+    }
+  }
+
+  .reduce:hover {
+    background: #f2f2f2;
+  }
+
+  .add {
+    width: 27px;
+    border-left: 1px solid #bdbdbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-image: url('../../assets/images/jia_kedian@2x.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .disabled {
+      opacity: 0.4;
+    }
+  }
+
+  .add:hover {
+    background: #f2f2f2;
+  }
+
+  .input {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 40px;
+      border: 0;
+      padding: 0;
+      text-align: center;
+      -webkit-appearance: none;
+      outline: none;
+      border-radius: 0;
+    }
+  }
+}

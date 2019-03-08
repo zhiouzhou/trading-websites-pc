@@ -1,0 +1,282 @@
+.cart-wrap{
+  w(320)
+  height: 100%;
+  min-height: 600px;
+  z-index: 10009;
+  position relative
+  bg(#f6f6f6)
+  overflow hidden
+  ft(12)
+  c(#333)
+  ml(36)
+  >div{
+    position relative
+    w(320)
+    height 100%
+    overflow hidden
+  }
+}
+.cart-head{
+  position absolute
+  left 0
+  top 0
+  h(32)
+  width 100%
+  pl(8)
+  pr(12)
+  flex()
+  >span{
+    flex()
+    align-items center
+  }
+  >span:first-child{
+    flex-1()
+  }
+  >span:last-child{
+    mr(18)
+  }
+}
+.cart-bottom{
+  position absolute
+  left 0
+  bottom 0
+  h(48)
+  width 100%
+  border 1px solid #EDEDED
+  box-sizing border-box
+  flex()
+  .total{
+    flex-1()
+    justify-content center
+    flex()
+    pl(12)
+    flex-direction column
+  }
+  .settlement{
+    w(85)
+    bg(#E53935)
+    c(#fff)
+    h(48)
+    lh(48)
+    text-c()
+    cp()
+    a{
+      c(#fff)
+    }
+  }
+}
+
+ .cart-content{
+   mt(32)
+   overflow-x hidden
+   overflow-y scroll
+ }
+
+.cart-group{
+  bg(#fff)
+  mb(12)
+  border-bottom 1px solid #EDEDED
+  pr(10)
+}
+.cart-title-wrap{
+  h(44)
+  flex()
+  align-items center
+}
+.cart-title-wrap-left{
+  ml(8)
+  mr(8)
+}
+.cart-title-wrap-right{
+  flex-1()
+  .name{
+    c(#333)
+    mb(5)
+  }
+  .tips{
+    c(#999)
+    >div{
+      flex()
+      .coudan{
+        flex-1()
+        text-align right
+        cp()
+      }
+    }
+    i{
+      //transform scale(0.9)
+    }
+  }
+}
+.cart-list{
+  flex()
+  align-items center
+  &:hover{
+    .list-r .spec .spec-r >i{
+      opacity 1
+    }
+  }
+  .list-l{
+    ml(8)
+    mr(8)
+  }
+  .list-m{
+    w(60)
+    h(60)
+    mr(12)
+    border 1px solid #EDEDED
+    cp()
+    min-width 60px
+  }
+  .list-r{
+    flex-1()
+    flex()
+    flex-direction column
+    min-height 60px
+    border-bottom 1px solid #EDEDED
+    padding 12px 0
+    .name{
+      c(#666)
+      mb(12)
+      cp()
+      text-overflow: ellipsis; display: -webkit-box;  -webkit-box-orient: vertical; overflow : hidden;-webkit-line-clamp: 2;
+    }
+    .price{
+      c(#333)
+      mb(5)
+    }
+    .spec{
+      flex()
+      .spec-l{
+        flex-1()
+        c(#666)
+      }
+      .spec-r{
+        c(#333)
+        flex()
+        .buy-count{
+          margin 0 4px
+          font-weight 600
+        }
+        >i{
+          w(14)
+          h(14)
+          inline()
+          background-size contain
+          background-repeat no-repeat
+          background-position center
+          cp()
+          opacity 0
+        }
+        .reduce-icon{
+          background-image url(../../assets/images/jianhao_changgui.png)
+          &:hover{
+            background-image url(../../assets/images/jianhao_dianjitai.png)
+          }
+        }
+        .add-icon{
+          background-image url(../../assets/images/jiahao_changgui.png)
+          &:hover{
+            background-image url(../../assets/images/jiahao_dianjitai.png)
+          }
+        }
+        .reduce-icon-disable{
+          background-image url(../../assets/images/jianhao_bukedian.png)
+        }
+        .add-icon-disable{
+          background-image url(../../assets/images/jiahao_bukedian.png)
+        }
+      }
+    }
+  }
+}
+.cart-list:last-child{
+  .list-r{
+    border-bottom none
+  }
+}
+.notice-tag-column{
+  bg(#FFFBF3)
+  padding 8px 0
+  .label{
+    ml(8)
+    mr(12)
+    text-c()
+    c(#E53935)
+    ft(10)
+    border 1px solid #E53935
+    border-radius 2px
+    padding 2px 3px
+    float left
+  }
+  .content{
+    c(#666)
+    ft(10)
+    flex-1()
+    float left
+    max-width 65%
+    line-height 1.2
+  }
+  .btn{
+    ft(12)
+    c(#666)
+    min-width 38px
+    float right
+    cp()
+  }
+}
+.cd-notice-column{
+  background #FAFAFB !important
+}
+
+.checker{
+  w(12)
+  h(12)
+  inline()
+  background-image url(../../assets/images/weigouxuanyouhuo_ic@3x.png)
+  background-size contain
+  background-repeat no-repeat
+  background-position center
+  cp()
+}
+.checked{
+  background-image url(../../assets/images/yigouxuan.png)
+}
+.mr-8{
+  mr(8)
+}
+.fw-b{
+  span{
+    font-weight 600
+  }
+}
+.pay-amount{
+  c(#E53935)
+  mb(6)
+  font-weight 600
+}
+
+.cart-empty{
+  position relative
+  flex()
+  align-items center
+  justify-content center
+  flex-direction column
+  width 100%
+  height 100%
+  .icon{
+    w(100)
+    h(100)
+    background-image url(../../assets/images/cart-empty.png)
+    background-size contain
+    background-repeat no-repeat
+    background-position center
+  }
+  .context{
+    mt(20)
+    c(#666)
+    h5{
+      ft(14)
+    }
+  }
+}

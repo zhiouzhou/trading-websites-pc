@@ -1,0 +1,372 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 12px
+  font-family: Microsoft YaHei,tahoma,arial,Hiragino Sans GB,sans-serif
+  font-weight: normal
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section
+  display: block
+
+body
+  line-height: 1
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+input,button,select,textarea
+  outline:none
+/* custom */
+a
+  color: #666666
+  -webkit-backface-visibility: hidden
+  text-decoration: none
+
+li
+  list-style: none
+
+body
+  -webkit-text-size-adjust: none
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+em,i 
+  font-style: normal
+input[type=text]::-ms-clear,::-ms-reveal{
+  display:none;
+}
+/*通用*/
+
+.flt {
+  float: left;
+}
+.frt {
+  float: right;
+}
+.clr {
+  clear: both;
+}
+.hide{
+  display: none
+}
+.inline{
+  display: inline-block
+}
+.block-center {
+  display: block;
+}
+.fz12{
+	font-size:12px
+}
+.fz14{
+	font-size:14px
+}
+.fz16{
+	font-size:16px
+}
+.fz18{
+	font-size:18px
+}
+.fz20{
+	font-size:20px
+}
+.fz22{
+	font-size:22px
+}
+.fz24{
+	font-size:24px
+}
+.fz26{
+	font-size:26px
+}
+.fz28{
+	font-size:28px
+}
+.fz30{
+	font-size:30px
+}
+.fz32{
+	font-size:32px
+}
+.fz36{
+	font-size:36px;
+}
+.fz38{
+  font-size:38px;
+}
+.fz40{
+  font-size:40px;
+}
+.pre {
+  position: relative;
+}
+.c-w {
+  color: #fff;
+}
+.c-b {
+  color: #000;
+}
+.c-9 {
+  color: #999;
+}
+.c-6 {
+  color: #666;
+}
+.c-3 {
+  color: #333;
+}
+.c-w-i {
+  color: #fff ! important;
+}
+.c-b-i {
+  color: #000 ! important;
+}
+.c-9-i {
+  color: #999 ! important;
+}
+.c-6-i {
+  color: #666 ! important;
+}
+.c-3-i {
+  color: #333 ! important;
+}
+.c-red{
+	color:#E53935
+}
+
+.c-yellow {
+  color: #FFA726
+}
+
+.m0 {
+  margin: 0;
+}
+.ml8{
+  margin-left: 8px
+}
+.ml10{
+  margin-left: 10px
+}
+.mr10{
+  margin-right: 10px
+}
+.ml12{
+  margin-left: 12px
+}
+.ml16{
+  margin-left: 16px
+}
+.mt24{
+  margin-top: 24px   
+}
+.mb24{
+  margin-bottom 24px
+}
+.p0{
+  padding: 0;  
+}
+.b0{
+  border: 0;
+}
+.b0-i{
+  border: 0!important;
+}
+.t-c {
+  text-align: center;
+}
+.t-c-i {
+  text-align: center ! important;
+}
+.t-r {
+  text-align: right;
+}
+.l-c {
+  vertical-align: middle;
+}
+.l-c-i {
+  vertical-align: middle ! important;
+}
+.bz-bb {
+  box-sizing: border-box;
+}
+.bz-cb {
+  box-sizing: content-box;
+}
+.bg-w{
+  background: #FFFFFF;
+}
+.bc-w-i {
+  background: #fff ! important;
+}
+.fw-in {
+  font-weight: inherit ! important;
+}
+.fw-b {
+  font-weight: bold;
+}
+.clearfix:after{
+		clear: both;
+	  display: block;
+	  content: "";
+	  visibility: hidden;
+	  height: 0;
+	  font-size: 0;
+ }
+.clearfix{
+  zoom:1
+}
+.flex{
+  display: flex;
+}
+.flex-center{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+.flex-1{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+.cs{
+  cursor pointer
+}
+.arrow{
+  font-family: simsun;
+  font-style: normal;
+  font-size: 12px;
+}
+.fz10{
+  font-size 12px
+  transform scale(0.9)
+  display inline-block
+}
+.time-count-style0{
+  display inline-block
+  font-size 18px
+  background #5B1D0E
+  color #fff
+  border-radius 2px
+  padding 3px
+}
+.time-count-style1{
+  display inline-block
+  font-size 10px
+  background #E53935
+  color #fff
+  border-radius 2px
+  padding 3px
+}
+.time-count-style2{
+  display inline-block
+  font-size 14px
+  background #5B1D0E
+  color #fff
+  border-radius 2px
+  padding 2px
+}
+.cRed{
+  font-size 18px
+  font-weight 600
+  c(#E53539)
+}
+
+.jiupi-center {
+  box()
+  margin-left 220px !important
+  min-height 712px
+  width auto !important
+}
+
+.text-overflow1 {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+}
+
+.text-overflow2 {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+
+/*加载动画*/
+.loading-icon {
+  position: fixed;
+  left: 50%;
+  top: 45%;
+  margin-left: -27px;
+  width: 54px;
+  height: 54px;
+  background: url(../images/loading-logo.png) 3px 3px no-repeat;
+  background-size: 54px 54px;
+}
+.loading-icon:before {
+  content ""
+  display inline-block
+  left 0
+  top 0
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  font-size: 10px;
+  margin: 0;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 3px solid rgba(170, 170, 170, 0.4);
+  border-right: 3px solid rgba(170, 170, 170, 0.4);
+  border-bottom: 3px solid rgba(170, 170, 170, 0.4);
+  border-left: 3px solid #aaa;
+  -webkit-animation: rotate1 1.1s infinite linear;
+  animation: rotate1 1.1s infinite linear;
+}
+@keyframes rotate1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

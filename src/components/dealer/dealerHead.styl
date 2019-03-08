@@ -1,0 +1,118 @@
+div,span, i
+  font-sze 12px
+  color #333
+/*入驻商全屏背景*/
+.dealer-bg {
+  background: url("../../assets/images/dealerBg_02.png") no-repeat;
+  background-size: 100% 400px;
+  position relative
+  z-index 2
+}
+.container{
+  pt(24)
+}
+.userFavorite-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../../assets/images/icon_guanzhuchenggong@2x.png") no-repeat;
+  background-size: 100%;
+  margin-right: 4px;
+  position: relative;
+  top: 4px;
+}
+.userFavorite-icon.active {
+  background: url("../../assets/images/icon_yiguanzhu.png") no-repeat;
+  background-size: 100%;
+}
+.shop-info{
+  flex()
+  width 100%
+  .shop-logo{
+    img{
+      w(148)
+      h(74)
+    }
+  }
+  .shop-content{
+    flex-1()
+    margin 0 24px
+    h5{
+      c(#333)
+      ft(16)
+      mb(12)
+    }
+    .introduce{
+      c(#333)
+      ft(14)
+      mb(12)
+    }
+    .contact{
+      span{
+        ft(14)
+        c(#666)
+        mr(30)
+      }
+    }
+  }
+  .shop-favo{
+    flex()
+    flex-direction column
+    justify-content center
+    align-items center
+    .icon{
+      bg(#E53935)
+      flex()
+      align-items center
+      w(100)
+      h(36)
+      cursor pointer
+      &:hover{
+        bg(#cb2e2a)
+      }
+      i{
+        display inline-block
+        w(18)
+        h(18)
+        background-image: url('../../assets/images/icon_guanzhuchenggong@2x.png')
+        background-size contain
+        background-repeat no-repeat
+        background-position center
+        margin 0 8px 0 12px
+        &.already{
+          background-image: url('../../assets/images/icon_yiguanzhu.png')
+          }
+      }
+      span{
+        ft(16)
+        c(#fff)
+      }
+    }
+    .num{
+      ft(14)
+      c(#666)
+      mt(8)
+    }
+  }
+}
+.shop-tab{
+  bg(#3F3C3C)
+  h(44)
+  mt(20)
+  span{
+    display inline-block
+    w(128)
+    h(44)
+    lh(44)
+    text-align center
+    ft(16)
+    c(#fff)
+    cursor pointer
+    &:hover{
+      bg(#cb2e2a)
+    }
+  }
+  .active{
+    bg(#E53935)
+  }
+}

@@ -1,0 +1,223 @@
+div, span, i
+  font-size 14px
+.activity-page{
+  bg(#F6F6F6)
+  min-height 600px
+}
+.page-banner{
+  width: 100%;
+  padding-bottom 15.6%;
+  background-image url(../../assets/images/youhuitejia_banner.png)
+  background-size contain
+  background-repeat no-repeat
+  background-position center
+}
+.container{
+  ft(14)
+  c(#999)
+  bg(#F6F6F6)
+}
+.home-float-area{
+/*  right 5%
+  left auto*/
+}
+.column-wrap{
+  flex()
+  flex-center()
+  h(60)
+  bg(#fff)
+  c(#333)
+  ft(20)
+  mt(-30)
+  >li{
+    flex-1()
+    text-c()
+    span{
+      inline()
+      h(60)
+      lh(60)
+      box-sizing border-box
+      cp()
+      ft(20)
+    }
+  }
+  .active{
+    span{
+      border-bottom 2px solid #E53935
+      c(#E53935)
+    }
+  }
+}
+.column{
+  pt(30)
+  pb(60)
+  >h3{
+    ft(26)
+    c(#333)
+    text-c()
+    span{
+      ft(26)
+      position relative
+      &:before{
+        content ""
+        position absolute
+        left -88px
+        top 50%;
+        h(2)
+        w(56)
+        bg(#543313)
+      }
+      &:after{
+        content ""
+        position absolute
+        right -88px
+        top 50%;
+        h(2)
+        w(56)
+        bg(#543313)
+      }
+    }
+  }
+  .content{
+    .ac-header{
+      flex()
+      flex-center()
+      margin 30px 0 20px
+      .title{
+        ft(18)
+        c(#333)
+        flex-1()
+        flex()
+        align-items center
+        position relative
+        pl(18)
+        span{
+          ft(14)
+          c(#999)
+        }
+        &:before{
+          content ""
+          position absolute
+          left 0
+          h(20)
+          w(6)
+          bg(#E53935)
+        }
+      }
+      .ac-time{
+        mr(48)
+        ft(14)
+        c(#999)
+        .time{
+          c(#333)
+        }
+      }
+      .ac-btn{
+        cp()
+        pr(22)
+        position relative
+        &:before{
+          content ""
+          position absolute
+          right 0
+          top -2px
+          w(16)
+          h(16)
+          inline()
+          background-image url(../../assets/images/chakanhuodongxiangqing.png)
+          background-size contain
+          background-repeat no-repeat
+          background-position center
+        }
+      }
+    }
+    .ac-list{
+      height: 100%;
+      overflow: hidden;
+      >.product-common-container{
+        bg(#fff)
+      }
+      .ac-product-box:nth-child(n+16){
+        hide()
+      }
+      .ac-list-more{
+        float left
+        w(238)
+        h(360)
+        mt(10)
+        bg(#fff)
+        background-image url(../../assets/images/more-product.png)
+        background-size contain
+        background-repeat no-repeat
+        background-position center
+        position relative
+        cp()
+        .contents{
+          position absolute
+          left 50%
+          top 50%
+          transform translate(-50%,-50%)
+          w(145)
+          text-align center
+          h5{
+            pb(10)
+            ft(24)
+            c(#999)
+          }
+          p{
+            pt(10)
+            border-top 1px dashed #BDBDBD
+            ft(28)
+            c(#E53935)
+            font-weight 600
+          }
+        }
+      }
+    }
+  }
+}
+.right-side-box {
+  w(356);
+  height: 100%;
+  min-height: 600px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  mr(-320);
+  transition: all 0.6s ease;
+}
+
+.cartshow {
+  mr(0);
+}
+.banner-fixed{
+  position fixed
+  left 0
+  top 0
+  width 100%
+  z-index 9
+}
+
+@media screen and (min-width: 1230px) {
+  .h-composition-item {
+    w(390);
+    mt(30)
+    mr(12)
+  }
+}
+.floor {
+  min-height: 370px;
+  background: url('../../assets/images/xiaoche.gif') no-repeat 50% 50%;
+}
+@media screen and (min-width: 1230px) {
+  .ac-product-box:nth-child(n+15){
+    display none !important
+  }
+  .ac-list-more{
+    width 232px !important
+  }
+}
+.empty-page{
+  h(400)
+}

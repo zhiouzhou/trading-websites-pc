@@ -1,0 +1,269 @@
+div,span, i
+  font-sze 12px
+
+.limit-pay-box{
+  .lpb-tips{
+    bg(#FFFAF3)
+    flex()
+    align-items center
+    padding 16px 12px
+    i{
+      inline()
+      w(16)
+      h(16)
+      mr(6)
+      background-image: url(../../assets/images/wenxintishi.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    p{
+      ft(12)
+      c(#FF703B)
+      line-height 1.3
+    }
+  }
+  .lpb-content{
+    padding 0 24px
+    .group-list{
+      li{
+        mt(24)
+        h5{
+          ft(14)
+          c(#333)
+          font-weight 600
+          mb(4)
+        }
+        p{
+          ft(12)
+          c(#999)
+        }
+      }
+    }
+    .limit-box{
+      h5{
+        mt(24)
+        mb(24)
+      }
+      .product-list{
+        flex()
+        flex-wrap wrap
+        li{
+          w(80)
+          h(80)
+          border 1px solid #EDEDED
+          box-sizing border-box
+          bg(#fff)
+          position relative
+          img{
+            margin auto
+          }
+          .no-can-buy-tag{
+            position absolute
+            left 0
+            bottom 0
+            h(20)
+            lh(20)
+            text-c()
+            bg(#000)
+            c(#fff)
+            ft(12)
+            opacity 0.5
+            width 100%
+          }
+        }
+      }
+    }
+  }
+  .lpb-bottom{
+    flex()
+    flex-center()
+    pt(16)
+    span{
+      inline()
+      w(120)
+      text-c()
+      h(36)
+      lh(36)
+      ft(14)
+      border-radius 2px
+      box-sizing border-box
+      cp()
+    }
+    .confirm{
+      bg(#E53935)
+      c(#fff)
+    }
+    .cancel{
+      bg(#EDEDED)
+      c(#333)
+      mr(20)
+      border 1px solid #E5E5E5
+    }
+  }
+}
+.container /deep/ {
+  .el-dialog__body{
+    border-top 1px solid #ededed
+    background #fff
+  }
+}
+.product-wrap{
+  flex()
+  .pic{
+    w(200)
+    h(200)
+    min-width 200px
+    border 1px solid #ededed
+    mr(16)
+    display inline-block
+  }
+  .right{
+    flex()
+    flex-direction column
+    .content{
+      h5{
+        ft(16)
+        c(#333)
+        font-weight bold
+        line-height 1.4
+      }
+      .spec{
+        ft(12)
+        c(#999)
+        margin 12px 0
+      }
+      .delivery{
+        display inline-block
+        bg(#fff)
+        border 1px solid #E53935
+        ft(12)
+        c(#E53935)
+        border-radius 2px
+        padding 1px 3px
+        mb(12)
+      }
+      .c-red{
+        c(#E53935)
+      }
+    }
+    .amount{
+      flex()
+      align-items center
+      c(#999)
+      ft(12)
+      margin 12px 0
+    }
+    .remark{
+      c(#999)
+      ft(12)
+      flex()
+      align-items flex-start
+      .remark-right{
+        flex-1()
+        flex()
+        flex-direction column
+        textarea{
+          min-height 70px
+          padding 8px
+        }
+        .confirm{
+          mt(24)
+          inline()
+          w(120)
+          text-c()
+          h(36)
+          lh(36)
+          ft(14)
+          border-radius 2px
+          box-sizing border-box
+          cp()
+          bg(#E53935)
+          c(#fff)
+        }
+      }
+    }
+  }
+}
+
+.number-input {
+  font-size: 10px;
+  color: #333333;
+  width: 94px;
+  height: 28px;
+  border-radius: 1px;
+  border: 1px solid rgba(189, 189, 189, 1);
+  box-sizing: border-box;
+  display: flex;
+  background: #fff;
+
+  .reduce {
+    width: 27px;
+    border-right: 1px solid #bdbdbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-image: url('../../assets/images/jian_kedian@2x.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .disabled {
+      opacity: 0.4;
+    }
+  }
+
+  .reduce:hover {
+    background: #f2f2f2;
+  }
+
+  .add {
+    width: 27px;
+    border-left: 1px solid #bdbdbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-image: url('../../assets/images/jia_kedian@2x.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .disabled {
+      opacity: 0.4;
+    }
+  }
+
+  .add:hover {
+    background: #f2f2f2;
+  }
+
+  .input {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 40px;
+      border: 0;
+      padding: 0;
+      text-align: center;
+      -webkit-appearance: none;
+      outline: none;
+      border-radius: 0;
+    }
+  }
+}

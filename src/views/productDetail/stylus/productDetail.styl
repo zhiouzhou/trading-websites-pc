@@ -1,0 +1,638 @@
+ div, span, i,p
+  font-size 14px
+.product{
+  mt(40)
+  ft(12)
+  c(#666)
+  min-height 600px
+  .info{
+    //flex()
+    .left-box{
+      w(314)
+      mr(24)
+      position relative
+      float left
+      .water-mark-logo{
+        position absolute
+        left 0
+        top 0
+        w(80)
+        h(80)
+        img{
+          margin 0
+        }
+      }
+      .favorite-column{
+        flex()
+        align-items center
+        mt(10)
+        pl(25)
+        c(#666)
+        ft(12)
+        cp()
+        i{
+          w(22)
+          h(22)
+          mr(5)
+          background: url(../../assets/images/commstar.png) no-repeat 0 -20px;
+        }
+        .favorited{
+          background: url(../../assets/images/commstar.png) no-repeat 0 0;
+        }
+        &:hover{
+          c(#E53935)
+        }
+      }
+    }
+    .right-box{
+      //flex-1()
+      //flex-direction column;
+      ml(328)
+    }
+  }
+}
+  .p-name-column{
+    mb(16)
+    .p-n-c-title{
+      flex()
+      flex-center()
+      h5{
+        flex-1()
+        span{
+          ft(22)
+          c(#333)
+        }
+      }
+      >span{
+        border 1px solid #BDBDBD;
+        h(30)
+        lh(30)
+        w(72)
+        text-c()
+        ft(12)
+        c(#666)
+        cp()
+      }
+    }
+    .p-n-c-activity{
+      ft(12)
+      mt(10)
+      flex()
+      align-items center
+      .content{
+        c(#E53935)
+        mr(6)
+      }
+      .time{
+        ft(12)
+        c(#E53935)
+      }
+      .btn{
+        c(#477AAC)
+        ml(12)
+        cp()
+        text-decoration underline
+      }
+    }
+  }
+  .p-price-column{
+    bg(#F4F4F4)
+    padding 16px 26px;
+    ft(14)
+    c(#999)
+    flex()
+    flex-direction column
+    .c-red{
+      c(#E53935)
+      span{
+        margin 0 6px
+      }
+    }
+    .p-p-wrap{
+      flex()
+      align-items center
+    }
+    .p-p-c-l{
+
+    }
+    .p-p-c-r{
+      ml(30)
+      .price{
+        flex()
+        align-items flex-end;
+        c(#E53935)
+        ft(20)
+        .num{
+          ft(28)
+        }
+        .priceunit{
+          ft(20)
+        }
+        .reduce{
+          border 1px solid #E53935;
+          radius(2)
+          ft(10)
+          padding 0 4px;
+          h(18)
+          lh(18)
+          ml(10)
+        }
+        .self-pick-column{
+          c(#666)
+          ft(14)
+          ml(24)
+        }
+      }
+      .tip{
+        mt(6)
+        c(#E53935)
+      }
+      .elide-price{
+        text-decoration line-through
+        ft(14)
+        c(#666)
+        mt(4)
+      }
+    }
+    .date{
+      flex()
+      mt(16)
+      i{
+        c(#666)
+        mr(48)
+        ft(14)
+      }
+      span{
+        ft(14)
+      }
+    }
+  }
+  .p-tag-column{
+    flex()
+    align-items center;
+    padding 16px 0;
+    >span{
+      w(262)
+      flex()
+      flex-center()
+      text-c()
+      i{
+        display inline-block
+        w(13)
+        h(13)
+        background-image url(../../assets/images/canotUse.png)
+        background-size contain
+        background-repeat no-repeat
+        background-position center
+        mr(10)
+      }
+      .can{
+        background-image url(../../assets/images/canUse.png)
+      }
+    }
+  }
+  .p-tips-column{
+    c(#666)
+    ft(14)
+    padding 14px 0;
+    border-top 1px dashed #E5E5E5;
+    border-bottom 1px dashed #E5E5E5;
+    flex()
+    align-items center
+    >span{
+      inline()
+      c(#E53935)
+      mr(30)
+    }
+  }
+  .p-cx-column{
+    c(#999)
+    ft(14)
+    flex()
+    padding 16px 0
+    border-bottom 1px dashed #E5E5E5
+    .title{
+      mr(30)
+      min-width 30px
+    }
+    .list{
+      flex-1()
+      flex-direction column;
+      c(#666)
+    }
+    .tag{
+      ft(12)
+      flex()
+      align-items center
+      mb(12)
+      pr(30)
+      .first{
+        c(#E53935)
+        border 1px solid #E53935
+        w(56)
+        h(20)
+        lh(20)
+        text-c()
+        border 1px solid #E53935;
+        radius(2)
+        min-width 58px
+      }
+      .last{
+        position relative
+        pr(25)
+        i{
+          right 0
+          top 2px
+          position absolute
+          w(12)
+          h(6)
+          background-image url(../../assets/images/bankMore-down.png)
+          background-size contain
+          background-repeat no-repeat
+          background-position center
+        }
+      }
+      p{
+        margin 0 12px;
+        flex-1()
+        line-height 1.5
+      }
+    }
+    .tag:last-child{
+      margin-bottom 0;
+    }
+  }
+  .p-ads-column{
+    flex()
+    c(#999)
+    ft(14)
+    mt(20)
+    >span{
+      mr(30)
+    }
+    .address{
+      flex-1()
+      pr(30)
+      .default{
+        flex()
+        flex-center()
+        >span{
+          flex-1()
+          mauto(12)
+          c(#666)
+        }
+        .dw{
+          w(12)
+          h(16)
+          background-image url(../../assets/images/location_red_ic.png)
+          background-size contain
+          background-repeat no-repeat
+          background-position center
+        }
+        .xz{
+          w(12)
+          h(6)
+          background-image url(../../assets/images/bankMore-down.png)
+          background-size contain
+          background-repeat no-repeat
+          background-position center
+          cp()
+        }
+      }
+      .all{
+        mt(20)
+        ft(14)
+        c(#666)
+        .title{
+          c(#333)
+          ft(14)
+          mb(12)
+        }
+        .ads-list{
+          li{
+            mb(12)
+            ft(14)
+            flex()
+            align-items center
+            cp()
+            i{
+              inline()
+              w(12)
+              h(16)
+              background-image url(../../assets/images/ic_dingweihui.png)
+              background-size contain
+              background-repeat no-repeat
+              background-position center
+              mr(12)
+            }
+            &:hover{
+              c(#E53935)
+              i{
+                background-image url(../../assets/images/ic_dingweihong.png)
+              }
+            }
+          }
+        }
+      }
+    }
+    .address-unfold{
+      position relative
+      &:before{
+        content ""
+        position absolute
+        border 1px solid #ededed
+        width 100%
+        height 100%
+        transform: scale(1,1.2) translateX(-2%);
+        z-index: -1;
+      }
+      .default{
+        .xz{
+          transform rotate(180deg)
+        }
+      }
+    }
+  }
+  .p-spec-column{
+    flex()
+    align-items center
+    c(#999)
+    ft(14)
+    mt(20)
+    >span{
+      mr(30)
+    }
+    .onlysalespecs{
+      inline()
+      mr(20)
+      border 2px solid #e53935;
+      padding 8px 20px;
+      background url(../../assets/images/choose.png) no-repeat right bottom;
+      cp()
+      c(#E43935)
+    }
+  }
+  .p-service-column{
+    flex()
+    align-items center
+    c(#999)
+    ft(14)
+    mt(20)
+    >span{
+      mr(30)
+    }
+    p{
+      c(#666)
+    }
+  }
+
+  .detail{
+    mt(80)
+    mb(120)
+    flex()
+  }
+ .recommend{
+   w(314)
+   mr(24)
+   min-width 314px;
+   float left
+   >div{
+     border 1px solid #E5E5E5;
+     >h5{
+       ft(16)
+       c(#333)
+       text-c()
+       margin 24px auto;
+       span{
+         position relative
+       }
+       span:before{
+         content "";
+         position absolute;
+         left -50px;
+         top 50%;
+         w(32)
+         h(1)
+         bg(#BDBDBD)
+       }
+       span:after{
+         content "";
+         position absolute;
+         right -50px;
+         top 50%;
+         w(32)
+         h(1)
+         bg(#BDBDBD)
+       }
+     }
+     .refresh-column{
+       c(#E43935)
+       ft(14)
+       text-c()
+       padding 15px 0
+       cp()
+       i{
+         inline()
+         w(14)
+         h(14)
+         background-image url(../../assets/images/shuaxin.png)
+         background-size contain
+         background-repeat no-repeat
+         background-position center
+         transform translate(-5px,2px)
+       }
+     }
+
+   }
+ }
+.introduce{
+  flex-1()
+  >div{
+    width 100%;
+    border 1px solid #E5E5E5;
+  }
+  .content{
+    mb(20)
+    .title{
+      bg(#f7f7f7)
+      h(48)
+      flex()
+      align-items center
+      span{
+        w(130)
+        bg(#fff)
+        h(48)
+        lh(48)
+        ft(16)
+        text-c()
+        border-top 2px solid #E53935
+        box-sizing border-box
+      }
+    }
+    .info-wrap{
+      flex()
+      flex-wrap wrap
+      ft(14)
+      c(#666)
+      border-top 1px #E5E5E5
+      >li{
+        flex()
+        width 33%
+        mt(20)
+        span:first-child{
+          word-break: keep-all;
+          ml(70)
+        }
+        span{
+          line-height 1.5
+        }
+      }
+      >li:nth-of-type(2),>li:nth-of-type(5){
+        span:first-child{
+          ml(30)
+        }
+      }
+    }
+    .info-transverse{
+      li{
+        width 100% !important
+        pr(20)
+      }
+      >li:nth-of-type(2),>li:nth-of-type(5){
+        span:first-child{
+          ml(70)
+        }
+      }
+    }
+  }
+  .pic-wrap{
+     li{
+       width 70%
+       margin 0 15%;
+       mb(20)
+     }
+   }
+}
+
+.p-buy-column{
+  flex()
+  c(#999)
+  ft(14)
+  mt(20)
+  >span{
+    mr(30)
+    mt(6)
+  }
+}
+.buy-wrap{
+
+}
+.buy-wrap-tract{
+  flex()
+  align-items center
+  .dw{
+    ml(12)
+  }
+  .kc{
+    ml(48)
+    span{
+      ml(6)
+    }
+  }
+}
+.buy-wrap-limit{
+  mt(16)
+  mb(-6)
+  flex()
+  c(#666)
+  div{
+    mr(12)
+  }
+}
+.buy-wrap-btn{
+  mt(22)
+  span{
+    inline()
+    w(136)
+    h(36)
+    lh(36)
+    text-c()
+    ft(16)
+    c(#fff)
+    cp()
+  }
+  .buy{
+    bg(#E43935)
+    mr(30)
+  }
+  .add{
+    bg(#FFA725)
+  }
+  .gone{
+    bg(#bdbdbd)
+  }
+  a{
+    inline()
+    w(250)
+    h(36)
+    lh(36)
+    text-c()
+    ft(16)
+    c(#fff)
+    cp()
+    bg(#E43935)
+  }
+}
+.recommend-wrap /deep/ {
+  padding 0 16px
+  .product-common-container{
+    width 100%
+    border none
+    margin 0
+    border-bottom 1px dashed #979797
+    h(300)
+  }
+  .product-wrap .p_content{
+    w(250)
+  }
+  .p_img{
+    w(180)
+    h(180)
+  }
+ .p_munber >a{
+   w(120)
+ }
+}
+.ft-14{
+  ft(14)
+}
+.p-special-column{
+ border-top 1px dashed #e5e5e5
+ border-bottom none
+}
+.disable-input{
+  position relative
+  &:before{
+    content ""
+    position absolute
+    left 0px
+    top 0px
+    width 100%
+    height 100%
+    z-index 2
+    background transparent
+    cp()
+  }
+}
+
+.info,.detail{
+  zoom:1
+}
+.info:after,.detail:after{
+  clear: both;
+  display: block;
+  content: "";
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+}
